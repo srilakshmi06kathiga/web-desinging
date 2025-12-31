@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Random color program</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+            #box{
+                width:300px;
+                height:200px;
+                margin:20px auto; 
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Random color Generator</h2>
+        <div id="box"></div>
+        <button onclick="changecolor()">Change Random Color</button>
+        <script>
+            function changecolor() {
+                let randomcolor='#'+ Math.floor(Math.random() * 16777215).toString(16);
+                document.getElementById("box").style.backgroundColor = randomcolor;
+            }
+            </script>
+    </body>
+</html>

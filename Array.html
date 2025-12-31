@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html
+<body>
+    <input type="text" id="t">
+    <button onclick="add()">Add</button>
+    <ul id="o"></ul>
+<script>
+    let a=[]
+    function  add(){
+    let v=document.getElementById("t").value;
+        if(v=="") return;
+        a.push(v);
+        document.getElementById("t").value=" ";
+        document.getElementById("o").innerHTML +="<li>"+v+"</li>";
+    }
+</script>
+</body>
+</html>

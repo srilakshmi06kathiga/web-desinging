@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result Calculation</title>
+    </head>
+    <body>
+        <h2>Student Result</h2>
+    <script>
+        let sub1=Number(prompt("Enter subject 1 marks"));
+        let sub2=Number(prompt("Enter subject 2 marks"));
+        let sub3=Number(prompt("Enter subject 3 marks"));
+        let sub4=Number(prompt("Enter subject 4 marks"));
+        let sub5=Number(prompt("Enter subject 5 marks"));
+        let total=sub1+sub2+sub3+sub4+sub5;
+        let average=total/5;
+        let result;
+        if(sub1>=35&&sub2>=35&&sub3>=35&&sub4>=35&&sub5>=35&&average>=40){
+            result="Pass";
+        }
+        else{
+            result="Fail";
+        }
+        document.write("Total Marks:"+total+"<br>");
+        document.write("Average:"+average.toFixed(2)+"<br>");
+        document.write("Result:"+result);
+    </script>
+    </body>
+</html>
